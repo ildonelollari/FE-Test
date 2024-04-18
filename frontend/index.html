@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    <title>SHERO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="glide/glide.core.css">
+    <link rel="stylesheet" href="glide/glide.theme.css">
+</head>
+<body>
+   
+
+<div class="container">
+  <div class="image1">
+  <img src="images/july.png" alt="4thofJuly" style="width: 600px; height :600px"; >
+  <div class="fourth"> 4TH OF JULY <br> SAVINGS ARE HERE! </div>
+  <div class="save"> SAVE 50% SITEWIDE</div>
+  <div class="code"> CODE: JULY4 </div>
+  
+    
+    <input type="button" value="Shop now" id="btn1" /> </div>
+    <script>
+        document.getElementById("btnimg1").onclick = function()
+        {
+        alert("Page is not found!");
+         };
+</script>
+</div>
+
+
+    <div class="image2">
+        <div class="wifi"> <p class="wifi">Wireless efficency </p></div>
+        <div class="text-overlay1">
+        <button type="button" value="Shop now" class="btn2" onclick="showNotFound()">Shop now</button> </div>
+         <img src="images/voltmeter.webp" alt="Voltmeter" style="width: 400px;height :300px" ;>
+    </div>
+
+    <div class="image3">
+        <div class="ppe"> PERSONAL PROTECTIVE <br> Equipment (PPE)</div>
+        <div class="text-overlay2">
+        <button type="button" value="Shop now" id="btn3" onclick="showNotFound()">Shop now</button> </div>
+        <img src="images/ppe.jpg" alt="PPE" style="width: 400px;height : 300px" ;>
+   
+
+    </div>
+
+</div>
+    <div class="container1">
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+
+        <li> <div class="image" class="glide_slide">
+        <p id="p1" >  TATTOO SUPPLIES </p>
+            <img src="images/tattoo.png" alt="tattoo equipment"  style="width: 100px;height :100px" ;><br><br>
+            <button type="button" id="btn4" onclick="showNotFound()" >Shop now</button> 
+
+        </div> </li>
+
+        <li>
+        <div class="image" class="glide_slide">
+        <p id="p2" class="glide_slide"> BODY JEWELRY </p>
+            <img src="images/jewel.avif" alt="body jewelry" class="glide_slide" style="width: 100px;height :100px" ;><br><br>
+            <button type="button"  id="btn5" class="glide_slide"  onclick="showNotFound()">Shop now</button>
+
+        </div> </li>
+
+        <li>
+        <div class="image" class="glide_slide">
+        <p id="p3" class="glide_slide"> PIERCING SUPPLIES</p>
+            <img src="images/piercing.png" alt="piercing supplies" class="glide_slide" style="width: 100px;height :100px" ;><br><br>
+            <button type="button"  id="btn5" class="glide_slide" onclick="showNotFound()">Shop now</button>
+        </div> </li>
+
+        <li> 
+        <div class="image" class="glide_slide">
+        <p id="p4" class="glide_slide"> MEDICAL SUPPLIES </p>
+            <img src="images/medical.png" alt="medical supplies" class="glide_slide" style="width: 100px;height :100px" ;><br><br>
+            <button type="button"  id="btn5" class="glide_slide" onclick="showNotFound()" >Shop now</button>
+        </div> </li>
+
+        <li> 
+        <div class="image" class="glide_slide">
+        <p id="p5" class="glide_slide"> PERMANENT MAKEUP</p>
+            <img src="images/makeup.png" alt="permanent makeup" class="glide_slide" style="width: 100px;height :100px" ;><br><br>
+            <button type="button"  id="btn5" class="glide_slide" onclick="showNotFound()">Shop now</button>
+        </div> </li>
+
+    </div> 
+    <div class="glide__arrows" data-glide-el="controls">
+        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+      </div>
+</div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"> </script>
+    
+    <script>
+        const config = {
+            type: 'carousel',
+            perView: 5,
+            breakpoints:{
+                600: {
+                    perView: 2
+                    } 
+                }
+        }
+        new Glide('.glide', config).mount()
+    </script>
+
+<script>
+function showNotFound() {
+    alert("Page is not found");
+} 
+</script>
+
+    <br>
+   
+
+</body>
+</html>
+
